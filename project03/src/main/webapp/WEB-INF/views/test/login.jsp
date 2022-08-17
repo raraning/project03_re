@@ -10,7 +10,7 @@
 <form method="post" name="login">
 <table border="1" align=center style="text-align:center;width:400px">
 	<tr>
-		<td colspan=2><b>로그인 페이지</b></td>
+		<td colspan=2><b>로그인 페이지123123</b></td>
 	</tr>
 	<tr>
 		<td>아이디 : </td>
