@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+.joinname{
+	display:inline-block;
+	width:140px;
+}
+
+.joinbutton1{
+	display:inline-block;
+	width:80px;
+	height:20px;
+	background-color:#eee;
+	text-align:center;
+	vertical-align:middle;
+	font-size:13px;
+	cursor:pointer;
+}
+
+.joinbutton2{
+	display:inline-block;
+	width:300px;
+	height:25px;
+	background-color:#eee;
+	text-align:center;
+	vertical-align:middle;
+	font-weight:bold;
+	font-size:15px;
+	border: none;
+	cursor:pointer;
+	font-family: 'Gowun Dodum', sans-serif;
+}
+
+#id_result{
+	font-size:11px;
+}
+
+.loginname{
+	display:inline-block;
+	width:100px;
+}
+
+/* 회원가입 종류 선택(join) */
+.join_select_button{
+	width:200px;
+	height:60px;
+	border:1px solid #eee;
+	border-radius:3px;
+	background:#b2aeff;
+	color:white;
+	font-weight:bold;
+	cursor:pointer;
+	font-size:16px;
+	text-align:center;
+	line-height:54px;
+}
+

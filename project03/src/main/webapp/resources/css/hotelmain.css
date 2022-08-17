@@ -1,0 +1,95 @@
+@charset "UTF-8";
+
+/* modal */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+}
+
+.hotelmain_back{
+	width:auto;
+	height:500px;
+	font-size:14px;
+	
+}
+
+#img_id{
+	width:1920px;
+	height:512px;
+	object-fit:cover;
+}
+
+.hotel_search{
+	position:relative;
+	left:500px;
+	bottom:150px;
+	border:1px solid #eee;
+	background:white;
+	width:1000px;
+	height:100px;
+	line-height:58px;
+}
+
+
+#hotel_search_where{
+	height:60px;
+	width:200px;
+	border:1px solid #eee;
+	background: #eee;
+	border-radius:3px;
+	font-weight:bold;
+}
+
+.hotel_search_content{
+	display:inline-block;
+}
+
+.hotel_checkinout_box{
+	border:1px solid #eee;
+	border-radius:3px;
+	background:#eee;
+	width:250px;
+	height:60px;
+}
+
+#hotel_search_checkin{
+	display:inline-block;
+}
+
+#hotel_search_checkout{
+	display:inline-block;
+}
+
+.hotel_checkinout_hide1{
+	display:none;
+}
+
+.hotel_checkinout_hide2{
+	display:none;
+}
+
+.hotel_search_button{
+	width:200px;
+	height:60px;
+	border:1px solid #eee;
+	border-radius:3px;
+	background:#b2aeff;
+	color:white;
+	font-weight:bold;
+	cursor:pointer;
+	font-size:16px;
+	text-align:center;
+}
+
+
+
+
+
+
+
+

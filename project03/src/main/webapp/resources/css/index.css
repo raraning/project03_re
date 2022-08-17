@@ -1,0 +1,623 @@
+@charset "UTF-8";
+/* index 배경 */
+
+.indexback{
+	height:600px;
+	background:#dff3ff;
+}
+
+/* index 어떤 여행을 꿈꾸시나요? */
+
+.indexsearch{
+	display:inline-block;
+	width:350px;
+	height:360px;
+}
+
+.istop{
+	font-size:21px;
+}
+
+/* 패키지 항공 호텔 */
+.ismenu1{
+	display:inline-block;
+	width:110px;
+	border-bottom:2px solid black;
+	font-size:15px;
+	text-align:center;
+	font-weight:bold;
+	cursor:pointer;
+}
+
+.ismenu2{
+	display:inline-block;
+	width:110px;
+	border-bottom:1px solid black;
+	font-size:15px;
+	text-align:center;
+	cursor:pointer;
+}
+
+.ismenu3{
+	display:inline-block;
+	width:110px;
+	border-bottom:1px solid black;
+	font-size:15px;
+	text-align:center;
+	cursor:pointer;
+}
+
+/* 어디로 떠나세요? */
+#tripsearch{
+	width:330px;
+	height:40px;
+	border-radius:5px;
+	border:1px solid white;
+	font-size:16px;
+}
+
+/* 출발지 선택 */
+.tripselectwhere{
+	text-align:center;
+	border-radius:5px;
+	border:1px solid white;
+	background:white;
+	width:165px;
+	height:35px;
+	line-height:33px;
+	font-size:15px;
+	cursor:pointer;
+}
+
+.tripoption{
+	text-align:center;
+	border-right:1px solid #b8b1ff;
+	border-left:1px solid #b8b1ff;
+	border-bottom:1px solid #b8b1ff;
+	background:white;
+	width:165px;
+	height:173px;
+	font-size:15px;
+	display:none;
+	z-index: 2;
+	position:absolute;
+}
+
+.tripwhere{
+	cursor:pointer;
+	z-index: 3;
+	position:relative;
+}
+
+.tripwhere:hover{
+	cursor:pointer;
+	background:#eee;
+	z-index: 3;
+	position:relative;
+}
+
+/* 출발지 선택 모달 modal */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+}
+
+
+/* 여행 시작일 선택 */
+.tripselectwhen{
+	text-align:center;
+	border-radius:5px;
+	border:1px solid white;
+	background:white;
+	width:165px;
+	height:35px;
+	line-height:33px;
+	font-size:15px;
+	cursor:pointer;
+}
+
+.tripoptiondate{
+	text-align:center;
+	border-right:1px solid #b8b1ff;
+	border-left:1px solid #b8b1ff;
+	border-bottom:1px solid #b8b1ff;
+	background:white;
+	width:165px;
+	height:30px;
+	font-size:15px;
+	display:none;
+	z-index: 2;
+	position:absolute;
+	vertical-align:middle;
+}
+
+.tripdate{
+	border:1px solid white;
+	background:white;
+}
+
+/* 항공권은 있어요 우리끼리만 여행할래요 */
+.tripair{
+	width:165px;
+	height:55px;
+	border:1px solid black;
+	border-radius:5px;
+	font-size:15px;
+	position:static;
+	cursor:pointer;
+	z-index: 1;
+}
+
+.tripairno{
+	display:none;
+	width:165px;
+	height:55px;
+	border:1px solid #6880d3;
+	color:#6880d3;
+	border-radius:5px;
+	font-size:15px;
+	position:static;
+	cursor:pointer;
+	z-index: 1;
+}
+
+.tripus{
+	width:165px;
+	height:55px;
+	border:1px solid black;
+	border-radius:5px;
+	font-size:15px;
+	position:static;
+	cursor:pointer;
+	z-index: 1;
+}
+
+.tripusno{
+	display:none;
+	width:165px;
+	height:55px;
+	border:1px solid #6880d3;
+	color:#6880d3;
+	border-radius:5px;
+	font-size:15px;
+	position:static;
+	cursor:pointer;
+	z-index: 1;
+}
+
+/* 패키지 검색 버튼 */
+.indexbutton{
+	text-align:center;
+	width:336px;
+	height:50px;
+	background:black;
+	color:white;
+	border:1px solid black;
+	border-radius:5px;
+	font-size:17px;
+	font-weight:bold;
+	line-height:50px;
+	position:static;
+	cursor:pointer;
+	z-index: 1;
+}
+
+/* 항공 검색 */
+.is_flight{
+	display:inline-block;
+	width:60px;
+	height:30px;
+	border:1px solid black;
+	background:black;
+	color:white;
+	border-radius:20px;
+	font-size:15px;
+	text-align:center;
+	line-height:30px;
+	cursor:pointer;
+}
+
+.is_flight2{
+	display:inline-block;
+	width:60px;
+	height:30px;
+	border:1px solid white;
+	background:white;
+	border-radius:20px;
+	font-size:15px;
+	text-align:center;
+	line-height:30px;
+	cursor:pointer;
+}
+
+.is_air{
+	display:inline-block;
+	width:153px;
+	height:35px;
+	border:1px solid white;
+	background:white;
+	font-size:15px;
+	text-align:center;
+	line-height:30px;
+}
+
+.is_air1{
+	display:inline-block;
+	width:165px;
+	height:35px;
+	border:1px solid white;
+	background:white;
+	font-size:15px;
+	text-align:center;
+	line-height:30px;
+	cursor:pointer;
+}
+
+.is_air2{
+	display:inline-block;
+	width:165px;
+	height:35px;
+	border:1px solid white;
+	background:white;
+	font-size:15px;
+	text-align:center;
+	line-height:30px;
+	cursor:pointer;
+}
+
+.is_air3{
+	display:inline-block;
+	width:165px;
+	height:35px;
+	border:1px solid white;
+	background:white;
+	font-size:15px;
+	text-align:center;
+	line-height:30px;
+	cursor:pointer;
+}
+
+.is_air4{
+	display:inline-block;
+	width:165px;
+	height:35px;
+	border:1px solid white;
+	background:white;
+	font-size:15px;
+	text-align:center;
+	line-height:30px;
+	cursor:pointer;
+}
+.is_air5{
+	display:inline-block;
+	width:336px;
+	height:35px;
+	border:1px solid white;
+	background:white;
+	font-size:15px;
+	text-align:center;
+	line-height:30px;
+	cursor:pointer;
+}
+
+.ismenu2_air{
+	display:none;
+}
+
+.ismenu2_air_arrow1{
+	display:inline-block;
+	vertical-align:middle;
+}
+
+.ismenu2_air_arrow2{
+	display:inline-block;
+	vertical-align:middle;
+	display:none;
+}
+
+.is_air_hide2{
+	display:none;
+}
+
+.tripoptiondate1{
+	text-align:center;
+	border-right:1px solid #b8b1ff;
+	border-left:1px solid #b8b1ff;
+	border-bottom:1px solid #b8b1ff;
+	background:white;
+	width:165px;
+	height:30px;
+	font-size:15px;
+	display:none;
+	z-index: 2;
+	position:absolute;
+	vertical-align:middle;
+}
+
+.tripoptiondate2{
+	text-align:center;
+	border-right:1px solid #b8b1ff;
+	border-left:1px solid #b8b1ff;
+	border-bottom:1px solid #b8b1ff;
+	background:white;
+	width:165px;
+	height:30px;
+	font-size:15px;
+	display:none;
+	z-index: 2;
+	position:absolute;
+	vertical-align:middle;
+	margin-left:171px;
+}
+.tripoptiondate3{
+	text-align:center;
+	border-right:1px solid #b8b1ff;
+	border-left:1px solid #b8b1ff;
+	border-bottom:1px solid #b8b1ff;
+	background:white;
+	width:336px;
+	height:30px;
+	font-size:15px;
+	display:none;
+	z-index: 2;
+	position:absolute;
+	vertical-align:middle;
+}
+
+.tripdate1{
+	border:1px solid white;
+	background:white;
+}
+
+.tripdate2{
+	border:1px solid white;
+	background:white;
+}
+
+.tripdate3{
+	border:1px solid white;
+	background:white;
+}
+
+.is_air_people{
+	display:inline-block;
+	width:165px;
+	height:35px;
+	border-right:1px solid #b8b1ff;
+	border-left:1px solid #b8b1ff;
+	border-bottom:1px solid #b8b1ff;
+	background:white;
+	z-index: 2;
+	font-size:15px;
+	text-align:center;
+	line-height:30px;
+	position:absolute;
+	display:none;
+}
+
+.is_air_people_cnt{
+	display:inline-block;
+	margin-top:5px;
+	cursor:pointer;
+}
+
+#is_air_people_input{
+	width:35px;
+	border:0;
+	text-align:center;
+	font-size:20px;
+}
+
+.is_air_seat{
+	display:inline-block;
+	width:165px;
+	height:35px;
+	border-right:1px solid #b8b1ff;
+	border-left:1px solid #b8b1ff;
+	border-bottom:1px solid #b8b1ff;
+	background:white;
+	z-index: 2;
+	font-size:15px;
+	text-align:center;
+	line-height:30px;
+	margin-left:171px;
+	display:none;
+}
+
+.seatoption{
+	text-align:center;
+	border-right:1px solid #b8b1ff;
+	border-left:1px solid #b8b1ff;
+	border-bottom:1px solid #b8b1ff;
+	background:white;
+	width:165px;
+	height:87px;
+	font-size:15px;
+	display:none;
+	z-index: 2;
+	position:absolute;
+	margin-left:171px;
+}
+
+.seatposition{
+	cursor:pointer;
+	z-index: 3;
+	position:relative;
+}
+
+.seatposition:hover{
+	cursor:pointer;
+	background:#eee;
+	z-index: 3;
+	position:relative;
+}
+
+
+/* 호텔 검색 */
+.ismenu3_hotel{
+	display:none;
+}
+
+.is_hotel1{
+	display:inline-block;
+	width:165px;
+	height:35px;
+	border:1px solid white;
+	background:white;
+	font-size:15px;
+	text-align:center;
+	line-height:30px;
+	cursor:pointer;
+}
+
+.is_hotel2{
+	display:inline-block;
+	width:165px;
+	height:35px;
+	border:1px solid white;
+	background:white;
+	font-size:15px;
+	text-align:center;
+	line-height:30px;
+	cursor:pointer;
+}
+
+.is_hotel3{
+	display:inline-block;
+	width:165px;
+	height:35px;
+	border:1px solid white;
+	background:white;
+	font-size:15px;
+	text-align:center;
+	line-height:30px;
+	cursor:pointer;
+}
+
+.is_hotel4{
+	display:inline-block;
+	width:165px;
+	height:35px;
+	border:1px solid white;
+	background:white;
+	font-size:15px;
+	text-align:center;
+	line-height:30px;
+	cursor:pointer;
+}
+.is_hotel5{
+	display:inline-block;
+	width:336px;
+	height:35px;
+	border:1px solid white;
+	background:white;
+	font-size:15px;
+	text-align:center;
+	line-height:30px;
+	cursor:pointer;
+}
+
+.tripoptiondate4{
+	text-align:center;
+	border-right:1px solid #b8b1ff;
+	border-left:1px solid #b8b1ff;
+	border-bottom:1px solid #b8b1ff;
+	background:white;
+	width:165px;
+	height:30px;
+	font-size:15px;
+	display:none;
+	z-index: 2;
+	position:absolute;
+	vertical-align:middle;
+}
+
+.tripoptiondate5{
+	text-align:center;
+	border-right:1px solid #b8b1ff;
+	border-left:1px solid #b8b1ff;
+	border-bottom:1px solid #b8b1ff;
+	background:white;
+	width:165px;
+	height:30px;
+	font-size:15px;
+	display:none;
+	z-index: 2;
+	position:absolute;
+	vertical-align:middle;
+	margin-left:171px;
+}
+
+.tripdate4{
+	border:1px solid white;
+	background:white;
+}
+
+.tripdate5{
+	border:1px solid white;
+	background:white;
+}
+
+.is_hotel_people{
+	display:inline-block;
+	width:165px;
+	height:35px;
+	border-right:1px solid #b8b1ff;
+	border-left:1px solid #b8b1ff;
+	border-bottom:1px solid #b8b1ff;
+	background:white;
+	z-index: 2;
+	font-size:15px;
+	text-align:center;
+	line-height:30px;
+	position:absolute;
+	display:none;
+}
+
+.is_hotel_people_cnt{
+	display:inline-block;
+	margin-top:5px;
+	cursor:pointer;
+}
+
+#is_hotel_people_input{
+	width:35px;
+	border:0;
+	text-align:center;
+	font-size:20px;
+}
+
+.is_hotel_room{
+	display:inline-block;
+	width:165px;
+	height:35px;
+	border-right:1px solid #b8b1ff;
+	border-left:1px solid #b8b1ff;
+	border-bottom:1px solid #b8b1ff;
+	background:white;
+	z-index: 2;
+	font-size:15px;
+	text-align:center;
+	line-height:30px;
+	position:absolute;
+	display:none;
+	margin-left:171px;
+}
+
+.is_hotel_room_cnt{
+	display:inline-block;
+	margin-top:5px;
+	cursor:pointer;
+}
+
+#is_hotel_room_input{
+	width:35px;
+	border:0;
+	text-align:center;
+	font-size:20px;
+}
