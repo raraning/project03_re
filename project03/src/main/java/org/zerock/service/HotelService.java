@@ -13,4 +13,5 @@ public interface HotelService {
 	public List<HotelVO> listHotel() throws Exception;
 	public List<HotelVO> listPension() throws Exception;
 	public void registsellroom(SellRoomVO sellroom) throws Exception;
+	public List<SellRoomVO> hotelsellList() throws Exception;
 }

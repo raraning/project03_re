@@ -30,7 +30,13 @@
 	</select>
 	
 	<insert id="insertSellRoom">
-		insert into sell_rrom (h_uid,h_price,h_point,breakfast,h_room) values (#{h_uid},#{h_price},#{h_point},#{breakfast},#{h_room})
+		insert into sell_room (h_uid,h_price,h_point,breakfast,h_room,h_name) values (#{h_uid},#{h_price},#{h_point},#{breakfast},#{h_room},#{h_name})
 	</insert>
+	
+	<select id="hotelsellList" resultType="SellRoomVO">
+		<![CDATA[
+			select * from sell_room where h_uid > 0 order by h_uid asc
+		]]>
+	</select>
 
 </mapper>

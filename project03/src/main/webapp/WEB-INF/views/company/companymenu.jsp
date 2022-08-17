@@ -9,6 +9,7 @@
 		<div>내 정보 수정</div>
 		<a href="/hotel/hotelregist"><div>숙소 등록하기</div></a>
 		<a href="/hotel/hotelsellregist"><div>숙소상품 판매하기</div></a>
+		<a href="/hotel/hotelselllist"><div>판매중인 숙소상품 목록</div></a>
 	</div>
 	<div style="display:inline-block;width:400px"> </div>
 </div>

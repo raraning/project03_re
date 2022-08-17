@@ -47,8 +47,8 @@ public class HotelController {
 		logger.info("hotel regist get=============");
 	}
 	
-	// Ã·ºÎÆÄÀÏ ÀúÀå °æ·Î
-	// servlet-context.xml¿¡ ÀÖ´Â bean id="uploadPath" °æ·Î ¸ÅÄª
+	// Ã·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
+	// servlet-context.xmlï¿½ï¿½ ï¿½Ö´ï¿½ bean id="uploadPath" ï¿½ï¿½ï¿½ ï¿½ï¿½Äª
 	@Resource(name="uploadPath")
 	private String uploadPath;
 	
@@ -119,7 +119,7 @@ public class HotelController {
 		return"redirect:/company/companymenu";
 	}
 	
-	//¼÷¼Ò»óÇ° ÆÇ¸ÅÇÏ±â
+	//ï¿½ï¿½ï¿½Ò»ï¿½Ç° ï¿½Ç¸ï¿½ï¿½Ï±ï¿½
 	@GetMapping("/hotelsellregist")
 	public void hotelsellregistGET(Model model, RedirectAttributes rttr) throws Exception{
 		logger.info("hotel sell regist get=============");
@@ -127,7 +127,7 @@ public class HotelController {
 		model.addAttribute("listhotel",service.listHotel());
 		model.addAttribute("listpension",service.listPension());
 	}
-	//¼÷¼Ò»óÇ° ÆÇ¸ÅÇÏ±â
+	//ï¿½ï¿½ï¿½Ò»ï¿½Ç° ï¿½Ç¸ï¿½ï¿½Ï±ï¿½
 	@PostMapping("/hotelsellregist")
 	public String hotelsellregistPOST(SellRoomVO sellroom, RedirectAttributes rttr) throws Exception{
 		logger.info("hotel sell regist post=============");
@@ -136,7 +136,14 @@ public class HotelController {
 		service.registsellroom(sellroom);
 		rttr.addFlashAttribute("h_uid", sellroom.getH_uid());
 		
-		return"redirect:/hotel/hotelfileregist";
+		return"redirect:/company/companymenu";
+	}
+	
+	@GetMapping("/hotelselllist")
+	public void hotelselllistGET(Model model, RedirectAttributes rttr) throws Exception{
+		logger.info("hotel sell list get=============");
+		
+		model.addAttribute("hotelselllist",service.hotelsellList());
 	}
 	
 	

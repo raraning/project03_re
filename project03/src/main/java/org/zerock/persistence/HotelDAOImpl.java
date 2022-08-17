@@ -27,7 +27,7 @@ public class HotelDAOImpl implements HotelDAO{
 	public void addAttack(String fullName, int h_uid) throws Exception {
 		System.out.println(h_uid);
 		
-		//mapper·Î °ªÀ» ¿©·¯°³ Àü´Þ½Ã °´Ã¼¿¡ ´ã¾Æ¼­ Àü´Þ ¡Ú
+		//mapperï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Þ½ï¿½ ï¿½ï¿½Ã¼ï¿½ï¿½ ï¿½ï¿½Æ¼ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½
 		HotelFileVO vo = new HotelFileVO();
 		vo.setFullName(fullName);
 		vo.setH_uid(h_uid);
@@ -50,6 +50,11 @@ public class HotelDAOImpl implements HotelDAO{
 	public void registsellroom(SellRoomVO sellroom) throws Exception {
 		sqlSession.insert(namespace+".insertSellRoom",sellroom);
 		
+	}
+	
+	@Override
+	public List<SellRoomVO> hotelsellList() throws Exception {
+		return sqlSession.selectList(namespace+".hotelsellList");
 	}
 	
 	

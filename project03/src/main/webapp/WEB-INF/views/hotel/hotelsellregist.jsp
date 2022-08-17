@@ -59,8 +59,8 @@
 				<div>
 					<div class="joinname">조식 포함 여부</div>
 					<div style="display:inline-block;">
-						<input type="radio" id="breakfast" name="breakfast" checked>미포함
-						<input type="radio" id="breakfast" name="breakfast">포함
+						<input type="radio" id="breakfast" name="breakfast" value="1" checked>미포함
+						<input type="radio" id="breakfast" name="breakfast" value="2">포함
 					</div>
 				</div>
 				<div style="height:10px"> </div>

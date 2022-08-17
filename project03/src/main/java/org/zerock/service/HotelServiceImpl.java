@@ -27,7 +27,7 @@ public class HotelServiceImpl implements HotelService{
 
 	@Override
 	public void registfile(HotelFileVO hotelfile, int h_uid) throws Exception {
-		//ÆÄÀÏÃ·ºÎ
+		//ï¿½ï¿½ï¿½ï¿½Ã·ï¿½ï¿½
 				String[] files = hotelfile.getFiles();
 				
 				System.out.println("=============== serviceimpl .. hotelfile ===========:"+hotelfile);
@@ -55,6 +55,11 @@ public class HotelServiceImpl implements HotelService{
 	public void registsellroom(SellRoomVO sellroom) throws Exception {
 		dao.registsellroom(sellroom);
 		
+	}
+	
+	@Override
+	public List<SellRoomVO> hotelsellList() throws Exception {
+		return dao.hotelsellList();
 	}
 	
 	
