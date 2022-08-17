@@ -1,0 +1,180 @@
+@charset "UTF-8";
+
+/* 기본 속성들 */
+html, body{
+	margin:0;
+	padding:0;
+	font-size:13px;
+	border-spacing:0px;
+	border-collapse:collapse;
+	font-family: 'Gowun Dodum', sans-serif;
+}
+input:focus {outline:none;}
+ul, ol, li {
+	list-style:none;
+}
+button{
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	outline:0;
+	background-color: transparent !important;
+    background-image: none !important;
+    border-color: transparent;
+    border: none;
+}
+
+/* a 태그 관련 */
+a { 
+	text-decoration: none;
+	text-decoration-line : none;
+	color:black;
+ }
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:active { text-decoration: none; }
+
+/* header */
+.head1{
+	height:60px;
+	line-height:40px;
+	text-align:right;
+}
+.head2{
+	height:60px;
+}
+
+.headtop{
+	display:inline-block;
+}
+
+.ht1{
+	width:800px;
+}
+
+.ht2{
+	width:150px;	
+}
+
+.htlogo{
+	width:180px;
+}
+
+.logotext{
+	color:#2e4da5;
+	font-size:20px;
+	font-weight:bold;
+	display:inline-block;
+	text-align:center;
+	line-height:30px;
+	vertical-align:top;
+}
+
+.search{
+	width:450px;
+	height:44px;
+	border:2px solid #2e4da5;
+	border-radius:5px;
+}
+
+.searchbox{
+	display:inline-block;
+	vertical-align:top;
+}
+
+/*메뉴바*/
+
+.navi{
+	border-top:1px solid #ccc;
+	border-bottom:1px solid black;
+	height:50px;
+	font-size:15px;
+	font-weight:bold;
+}
+
+.menubar{
+	display:inline-block;
+	width:1100px;
+	border-left:1px solid #ccc;
+	border-right:1px solid #ccc;
+	height:50px;
+}
+
+.menuleft{
+	border-right:1px solid #ccc;
+	height:50px;
+	width:150px;
+	text-align:center;
+	vertical-align:middle;
+	display:inline-block;
+}
+
+.menubar1{
+	display:inline-block;
+	vertical-align:middle;
+	line-height:40px;
+}
+
+.menuright{
+	height:50px;
+	text-align:center;
+	vertical-align:middle;
+	display:inline-block;
+	line-height:45px;
+}
+
+.menuoverseas{
+	display:inline-block;
+	vertical-align:middle;
+	line-height:40px;
+}
+
+.menujeju{
+	display:inline-block;
+	vertical-align:middle;
+	line-height:40px;
+}
+
+.menuhotel{
+	display:inline-block;
+	vertical-align:middle;
+	line-height:40px;
+}
+
+.navimenu{
+	border-bottom:1px solid #ccc;
+	height:40px;
+	font-size:13px;
+}
+
+.navimenu1{
+	display:none;
+	position:absolute;
+	border-bottom:1px solid #ccc;
+	background:white;
+	height:40px;
+	font-size:13px;
+}
+
+.navimenu2{
+	display:none;
+	position:absolute;
+	border-bottom:1px solid #ccc;
+	background:white;
+	height:40px;
+	font-size:13px;
+}
+
+.navimenu3{
+	display:none;
+	position:absolute;
+	border-bottom:1px solid #ccc;
+	background:white;
+	height:40px;
+	font-size:13px;
+}
+
+
+
+
+
