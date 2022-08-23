@@ -57,6 +57,13 @@ public class HotelServiceImpl implements HotelService{
 		
 	}
 	
+	
+	
+	@Override
+	public void commasellroom(SellRoomVO sellroom) throws Exception {
+		dao.commasellroom(sellroom);
+	}
+
 	@Override
 	public List<SellRoomVO> hotelsellList() throws Exception {
 		return dao.hotelsellList();

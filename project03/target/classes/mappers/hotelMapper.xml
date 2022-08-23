@@ -30,8 +30,12 @@
 	</select>
 	
 	<insert id="insertSellRoom">
-		insert into sell_room (h_uid,h_price,h_point,breakfast,h_room,h_name) values (#{h_uid},#{h_price},#{h_point},#{breakfast},#{h_room},#{h_name})
+		insert into sell_room (h_uid,h_price,h_point,breakfast,h_name,h_room) values (#{h_uid},#{h_price},#{h_point},#{breakfast},#{h_name},#{h_room})
 	</insert>
+	
+	<update id="commaSellRoom">
+		update sell_room set h_room = replace(h_room,',','')
+	</update>
 	
 	<select id="hotelsellList" resultType="SellRoomVO">
 		<![CDATA[

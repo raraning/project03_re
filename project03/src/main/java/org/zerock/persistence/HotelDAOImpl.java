@@ -53,6 +53,11 @@ public class HotelDAOImpl implements HotelDAO{
 	}
 	
 	@Override
+	public void commasellroom(SellRoomVO sellroom) throws Exception {
+		sqlSession.update(namespace+".commaSellRoom",sellroom);
+	}
+
+	@Override
 	public List<SellRoomVO> hotelsellList() throws Exception {
 		return sqlSession.selectList(namespace+".hotelsellList");
 	}

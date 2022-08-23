@@ -136,6 +136,9 @@ public class HotelController {
 		service.registsellroom(sellroom);
 		rttr.addFlashAttribute("h_uid", sellroom.getH_uid());
 		
+		logger.info("hotel sell regist delete comma=============");
+		service.commasellroom(sellroom);
+		
 		return"redirect:/company/companymenu";
 	}
 	
