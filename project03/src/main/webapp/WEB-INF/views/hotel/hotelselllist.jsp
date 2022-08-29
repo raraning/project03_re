@@ -33,8 +33,28 @@
 			</div>
 			</c:forEach>
 		</div>
+		<div style="height:30px;"></div>
+		<div>
+			<div style="display:inline-block;width:300px"></div>
+			<c:if test="${pageMaker.prev}">
+				<div style="display:inline-block;width:100px"><a href="hotelselllist?page=${pageMaker.startPage - 1}">이전</a></div>
+			</c:if>
+			<c:forEach var="idx" begin="${pageMaker.startPage}" end="${pageMaker.endPage}">
+				<div style="display:inline-block;width:10px;text-align:center">
+					<c:if test="${pageMaker.cri.page == idx}"><b></c:if>
+					<a href="hotelselllist?page=${idx}">${idx}</a>
+					<c:if test="${pageMaker.cri.page == idx}"></b></c:if>
+				</div>
+			</c:forEach>
+			<c:if test="${pageMaker.next && pageMaker.endPage >0}">
+				<div style="display:inline-block;width:100px"><a href="hotelselllist?page=${pageMaker.endPage + 1}">다음</a></div>
+			</c:if>
+			<div style="display:inline-block;width:300px"></div>
+		</div>
 	</div>
 	<div style="height:30px"> </div>
 	<div style="display:inline-block;width:400px"> </div>
 </div>
 <%@ include file="/WEB-INF/views/include/footer.jsp" %>
+
+

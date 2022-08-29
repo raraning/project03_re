@@ -6,6 +6,7 @@ import javax.inject.Inject;
 
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import org.zerock.domain.Criteria;
 import org.zerock.domain.HotelFileVO;
 import org.zerock.domain.HotelVO;
 import org.zerock.domain.SellRoomVO;
@@ -67,6 +68,11 @@ public class HotelServiceImpl implements HotelService{
 	@Override
 	public List<SellRoomVO> hotelsellList() throws Exception {
 		return dao.hotelsellList();
+	}
+
+	@Override
+	public List<SellRoomVO> listCriteria(Criteria cri) throws Exception {
+		return dao.listCriteria(cri);
 	}
 	
 	

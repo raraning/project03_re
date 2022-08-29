@@ -42,5 +42,23 @@
 			select * from sell_room where h_uid > 0 order by h_uid asc
 		]]>
 	</select>
+	
+	<select id="hotelsellPage" resultType="SellRoomVO">
+		<![CDATA[
+			select * from sell_room where h_uid > 0  order by h_uid desc limit #{page}, 10
+		]]>
+	</select>
+	
+	<select id="listCriteria" resultType="SellRoomVO">
+		<![CDATA[
+			select * from sell_room where h_uid > 0 order by h_uid desc limit #{pageStart}, #{perPageNum}
+		]]>
+	</select>
 
 </mapper>
+
+
+
+
+
+

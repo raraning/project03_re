@@ -19,8 +19,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
+import org.zerock.domain.Criteria;
 import org.zerock.domain.HotelFileVO;
 import org.zerock.domain.HotelVO;
+import org.zerock.domain.PageMaker;
 import org.zerock.domain.SellRoomVO;
 import org.zerock.service.HotelService;
 
@@ -142,11 +144,31 @@ public class HotelController {
 		return"redirect:/company/companymenu";
 	}
 	
-	@GetMapping("/hotelselllist")
+	/*@GetMapping("/hotelselllist")
 	public void hotelselllistGET(Model model, RedirectAttributes rttr) throws Exception{
 		logger.info("hotel sell list get=============");
 		
 		model.addAttribute("hotelselllist",service.hotelsellList());
+	}*/
+	
+	/*@GetMapping("/hotelselllist")
+	public void listCri(Criteria cri, Model model) throws Exception{
+		logger.info("show list Page with Criteria==============");
+		
+		model.addAttribute("hotelselllist",service.listCriteria(cri));
+	}*/
+	
+	@GetMapping("/hotelselllist")
+	public void listPage(Criteria cri, Model model) throws Exception{
+		logger.info(cri.toString());
+		
+		model.addAttribute("hotelselllist",service.listCriteria(cri));
+		
+		PageMaker pageMaker = new PageMaker();
+		
+		pageMaker.setCri(cri);
+		
+		model.addAttribute("pageMaker",pageMaker);
 	}
 	
 	
