@@ -18,4 +18,5 @@ public interface HotelService {
 	public List<SellRoomVO> hotelsellList() throws Exception;
 	
 	public List<SellRoomVO> listCriteria(Criteria cri) throws Exception;
+	public int listCountCriteria(Criteria cri) throws Exception;
 }

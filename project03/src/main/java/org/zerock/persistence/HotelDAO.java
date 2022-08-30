@@ -18,4 +18,5 @@ public interface HotelDAO {
 	
 	public List<SellRoomVO> hotelsellPage(int page) throws Exception;
 	public List<SellRoomVO> listCriteria(Criteria cri) throws Exception;
+	public int countPaging(Criteria cri) throws Exception;
 }

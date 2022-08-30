@@ -167,6 +167,7 @@ public class HotelController {
 		PageMaker pageMaker = new PageMaker();
 		
 		pageMaker.setCri(cri);
+		pageMaker.setTotalCount(service.listCountCriteria(cri));
 		
 		model.addAttribute("pageMaker",pageMaker);
 	}

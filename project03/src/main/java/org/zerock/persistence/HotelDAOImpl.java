@@ -77,6 +77,11 @@ public class HotelDAOImpl implements HotelDAO{
 	public List<SellRoomVO> listCriteria(Criteria cri) throws Exception {
 		return sqlSession.selectList(namespace+".listCriteria",cri);
 	}
+
+	@Override
+	public int countPaging(Criteria cri) throws Exception {
+		return sqlSession.selectOne(namespace+".countPaging",cri);
+	}
 	
 	
 }

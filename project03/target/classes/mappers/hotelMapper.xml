@@ -54,6 +54,12 @@
 			select * from sell_room where h_uid > 0 order by h_uid desc limit #{pageStart}, #{perPageNum}
 		]]>
 	</select>
+	
+	<select id="countPaging" resultType="int">
+		<![CDATA[
+			select count(h_uid) from sell_room where h_uid > 0
+		]]>
+	</select>
 
 </mapper>
 
